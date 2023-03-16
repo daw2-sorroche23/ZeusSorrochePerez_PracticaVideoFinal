@@ -1,0 +1,147 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+$utilities:(
+    "width": (
+        property: width,
+        class: w,
+        values: (
+          25: 25%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          auto: auto
+        )
+      )
+);
+
+
+//Tamaño de los parrafos
+$p: 18px;
+
+//Tamaño letra 
+$h1-font-size: 56px;
+$h2-font-size: 16px;
+$h3-font-size: $p;
+$h4-font-size: 48px;
+$h5-font-size: 12px;
+
+//Colores
+$primary: #5E3BEE;
+$secondary: #F5FCFF;
+$success: #E62872;
+$danger: #006B6A;
+
+
+//Utilizamos gap para hacer espacios entre los col
+.gap{
+    gap: 32px;
+}
+
+//Le ponemos un estilo al boton primario
+
+.btn-bd-primary {
+
+    /* Auto layout */
+    color: white;
+    border: round($number: 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 8px;
+
+    width: 128px;
+    height: 52px;
+
+    /* Primary */
+    background: $primary;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+//HEADER
+//padding
+.header{
+    padding: 100px 64px;
+}
+
+
+//SKILL
+//Padding del skill
+#skill{
+    padding: 112px 64px;
+}
+
+//Le ponemos un padding abajo entre el titulo y la habilidades
+.paddingTitulo{
+    padding-bottom:80px;
+}
+
+//Le ponemos un padding a las etiquetas  
+.paddingEtiquetas{
+    padding: 24px 24px;
+}
+
+//Le ponemos un tamaño a las imagenes
+.imagen{
+    height: 40px;
+    width: 40px;
+}
+
+//Le ponemos un padding top y bottom a las etiquetas
+.paddingDiv{
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+//Padding aboutMe
+#aboutMe{
+    padding: 100px 64px;
+}
+
+//Padding portfolio
+#portfolio{
+    padding: 112px 64px;
+}
+
+//Tamaño de las flechas
+.imagen2{
+    width: 12px;
+}
+
+//Padding customer
+#customer{
+    padding: 112px 64px;
+}
+
+//Padding de los comentarios
+.paddingComent{
+    padding: 32px 32px;
+}
+//Tamaño de los perfiles de avatar
+.imagen3{
+    width: 56px;
+}
+
+//Padding contact
+#contact{
+    padding: 112px 64px;
+}
+//Padding que tiene el footer
+footer{
+    padding: 80px 64px;
+}
+
+//Importamos la biblioteca de boostrap y la modificamos pra que se adecue a nuestra pagina web
+@import "../scss_bootstrap/bootstrap.scss"
+
+
